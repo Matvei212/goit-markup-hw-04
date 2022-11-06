@@ -79,12 +79,10 @@ p {
 
 .site-nav{
   display: flex;
+  gap: 50px;
   padding: 32px 0px;
 }
 
-.site-nav .item:not(:last-child){
-  margin-right: 50px;
-}
 .site-nav .link {
   display: block;
   color: var(--title-text-color);
@@ -106,14 +104,13 @@ p {
 /* Контакти хедер */
 .contacts{
   display: flex;
+  gap: 50px;
   align-items: center;
   padding: 32px 0px;
   margin-left: auto;
 }
 
-.contacts .item:not(:last-child){
-  margin-right: 50px;
-}
+
 .contacts .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -126,12 +123,39 @@ p {
 .contacts .link:focus {
   color: var(--accent-color);
 }
+.contacts-item{
+  display: inline-flex;
+  align-items: center;
+}
+/* .contacts .contacts-item::before
+{
+  display: inline-block;
+  content: "";
+  margin-right: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.contacts .mail::before{
+  width: 16px;
+  height: 12px;
+  background-image: url(../image/envelope.png);
+}
+
+.contacts .mail:hover:before{
+  width: 16px;
+  height: 12px;
+background-image: url(../image/envelope-hover.png);
+} */
+
+
 /* Герой */
 .hero {
   background-color: var(--second-background-color);
   text-align: center;
-  
   padding: 200px 0px 200px;
+
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -158,6 +182,16 @@ p {
   display: block;
   margin: 0px auto;
 }
+.bg-hero{
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-border.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /* Секції */
 .section{
   margin: 0px auto;
@@ -178,6 +212,7 @@ p {
 
 .container .feature-list{
   display: flex;
+  gap: 30px;
     width: 1200px;
       padding: 0 15px;
       margin: 0px auto;
@@ -209,6 +244,7 @@ p {
 
 .container .works{
   display: flex;
+  gap: 30px;
     width: 1200px;
       padding: 0 15px;
       margin: 0px auto;
@@ -220,20 +256,15 @@ p {
  }
 
 
-
-.section .item:not(:last-child){
-  margin-right: 30px;
-}
 /* Наша команда */
 .container .comand{
   display: flex;
+  gap: 30px;
     width: 1200px;
       padding: 0 15px;
       margin: 0px auto;
 }
-.comand .item:not(:last-child){
-  margin-right: 30px;
-}
+
 .section.comand-section{
   background-color: var(--portfolio-button-color);
 
