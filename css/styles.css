@@ -150,6 +150,8 @@ p {
   width: 696px;
   text-align: center;
 }
+
+
 .hero .button {
   font-weight: 700;
   font-size: 16px;
@@ -310,7 +312,34 @@ img {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
+/* Клієнти */
+.container .client{
+  display: inline-flex;
+  gap: 30px;
+  
+}
 
+.client .client-link{
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 170px;
+height: 92px;
+border: 1px solid var(--color-icon);
+border-radius: 4px;
+color: var(--color-icon);
+
+
+}
+.client-link .client-icon{
+  fill: currentColor;
+}
+.client .client-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  cursor: pointer;
+ 
+}
 /* футер */
 .footer {
   background-color: var(--second-background-color);
@@ -352,6 +381,27 @@ img {
 .contact .footer-link:hover,
 .contact .footer-link:focus {
   color: var(--accent-color);
+}
+.footer-container{
+  display: block;
+}
+/* Приєднуйтесь */
+.footer-box{
+  display: inline-flex;
+  gap: 70px;
+  
+}
+.container-icon{
+  align-items: baseline;
+  padding-top: 72px;
+}
+.footer-title{
+  Font-family: Roboto;
+font-weight: 700;
+font-size:  14px;
+Line-height: 1.14;
+color: var(--primary-white-color);
+
 }
 /* Кнопка */
 .button {
