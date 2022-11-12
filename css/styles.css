@@ -197,9 +197,7 @@ p {
 .container .feature-list {
   display: flex;
   gap: 30px;
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0px auto;
+
 }
 
 .feature-list .title {
@@ -243,9 +241,7 @@ p {
 .container .works {
   display: flex;
   gap: 30px;
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0px auto;
+
 }
 img {
   display: block;
